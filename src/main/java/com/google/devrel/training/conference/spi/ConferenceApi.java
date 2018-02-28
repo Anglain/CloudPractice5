@@ -48,7 +48,7 @@ public class ConferenceApi {
 
     // TODO 1 Pass the ProfileForm parameter
     // TODO 2 Pass the User parameter
-    public Profile saveProfile(ProfileForm profileForm, User user) throws UnauthorizedException {
+    public Profile saveProfile(User user, ProfileForm profileForm) throws UnauthorizedException {
 
         String userId = null;
         String mainEmail = null;

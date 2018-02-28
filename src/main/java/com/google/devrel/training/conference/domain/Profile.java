@@ -53,8 +53,10 @@ public class Profile {
     
     public void update(String displayName, TeeShirtSize teeShirtSize)
     {
-	    this.displayName = displayName;
-	    this.teeShirtSize = teeShirtSize;
+    	if (!displayName.equals("New Display Name"))
+	        this.displayName = displayName;
+    	
+	    if (teeShirtSize != TeeShirtSize.M)
+		    this.teeShirtSize = teeShirtSize;
     }
-
 }
